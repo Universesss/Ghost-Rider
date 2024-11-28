@@ -1,0 +1,256 @@
+#logo{
+    width:100px;
+    height: 100px;
+    margin-left: 10px;
+}
+header {
+    background: linear-gradient(90deg, #291415, #72383D); 
+    padding: 10px 20px;
+}
+
+/* Flex container */
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo ayarları */
+#logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navbar container */
+#nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* Navbar linkleri */
+.nav-item {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar link hover */
+.nav-item:hover {
+    background-color: #d86e75;
+    color: #72383D;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+    #nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #logo img {
+        width: 120px;
+    }
+}
+
+/* GALLERY Başlığı için Stil */
+.gallery-title {
+    font-size: 4rem; 
+    font-weight: bold; 
+    color: #d9d9d9; 
+    text-align: center;
+    letter-spacing: 8px; 
+    margin-top: 50px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #72383D, #d1c7bd); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradient-flow 3s infinite; 
+    
+}
+body {
+    background: linear-gradient(135deg, #322D29, #72383D);
+}
+
+#navtext {
+    text-decoration: none;
+    text-align: center;
+    color: #d1c7bd;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navtext:hover {
+    color: #fff;
+}
+
+/* body{
+    background-color: #322D29;
+    color: #d9d9d9;
+} */
+#navtext{
+    text-decoration: dashed;
+    text-align: center;
+    color:#d1c7bd
+}
+#baslik{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* #galleri{
+    border: 10px #322D29 solid;
+} */
+
+#galleri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#galleri img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+td{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+#galleri img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Satış Bölümü */
+/* Genel Satış Tasarımı */
+#sales {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #322D29;
+    color: #d9d9d9;
+}
+
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.car-item {
+    background-color: #72383D;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.car-price {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    background-color: #d1c7bd;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #322D29;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: #fff;
+}
+
+/* Detaylar Pop-up */
+.details-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b1d1f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 400px;
+    text-align: left;
+    z-index: 1000;
+}
+
+.details-popup:target {
+    display:inline;
+}
+
+.details-content {
+    position: relative;
+}
+
+.close-btn {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #d1c7bd;
+}
+
+
+
+/* Degrade animasyonu */
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 768px) {
+    .model-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .model-card {
+        flex: 1 1 100%;
+    }
+}
+
+

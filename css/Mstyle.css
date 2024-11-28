@@ -1,0 +1,105 @@
+body {
+    background-color: #322d29;
+    background: linear-gradient(180deg, #322d29, #3b1d1f);
+    color: #D9D9D9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(90deg, #291415, #72383D); 
+    padding: 10px 20px;
+}
+
+/* Flex container */
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo ayarları */
+#logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navbar container */
+#nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* Navbar linkleri */
+.nav-item {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Navbar link hover */
+.nav-item:hover {
+    background-color: #d86e75;
+    color: #72383D;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.motorGenel{
+    display: flex; /* yan yana olmasını sağlayan bu */
+    align-items: center;
+    justify-content: center;
+    color: #d1c7bd;
+    background-color: #1e1e1e;
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* gölge */
+    max-width: 1400px;
+    transition: transform 0.3s ease; /* süre */
+}
+
+.motorGenel:hover {
+    transform: scale(1.05); /* efekt */
+}
+
+.motorImg {
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 200px;
+}
+
+
+.motorInfo {
+    color: #d1c7bd;
+    line-height: 2;
+    max-width: 800px;
+    font-size: 22px;
+}
+
+/* Başlık */
+.motorT {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #e63946;
+}
+
+@media (max-width: 768px) {
+    .model-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .model-card {
+        flex: 1 1 100%;
+    }
+}
